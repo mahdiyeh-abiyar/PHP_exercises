@@ -1,0 +1,124 @@
+/* فونت فارسی */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #f8f9fa;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* استایل فرم */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    text-align: right;
+    width: 350px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: white;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+/* استایل جدول */
+table {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* استایل دکمه‌ها */
+a {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+a[href*="edit"] {
+    background: linear-gradient(to right, #ffb347, #ffcc33);
+    color: black;
+}
+
+a[href*="edit"]:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ffcc33, #ffb347);
+}
+
+a[href*="delete"] {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+}
+
+a[href*="delete"]:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
